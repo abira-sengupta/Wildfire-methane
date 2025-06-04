@@ -1,2 +1,2 @@
-[View the methane flux figure (PDF)](images/Prediction error CatBoost.pdf)
+![Example Image](image/Residuals-AdaBoost.png).
 
