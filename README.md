@@ -1,2 +1,2 @@
-![Example Image](image/Residuals-AdaBoost.png).
+![Example Image](images/Residuals-AdaBoost.png).
 
