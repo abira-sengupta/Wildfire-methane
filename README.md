@@ -2,3 +2,7 @@
 
 
 ![Example Image](images/PredictionerrorCatBoost.jpg).
+
+
+![Example Image](images/PredictionerrorCatBoost.jpg).
+
