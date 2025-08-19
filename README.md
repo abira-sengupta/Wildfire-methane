@@ -27,7 +27,7 @@
 # Table 1: An overview of the preprocessing information and PyCaret setup configuration for the regression experiment.
 
 |Description | Feature | Metric |
-|Wildfire combustion rate| crfire |kg m^-2 s^-1|
+|Wildfire combustion rate| crfire | kg m⁻² s⁻¹ |
 |--------|---------|---------|
 |--------|---------|---------|
 |--------|---------|---------|
