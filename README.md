@@ -39,3 +39,21 @@
 | Wildfire radiative power                      | frpfire | W m⁻²      |
 | Altitude of plume top                         | apt     | m          |
 
+# Table 2: An overview of the preprocessing information and PyCaret setup configuration for the regression experiment
+
+| Description                 | Value        |
+|-----------------------------|--------------|
+| Session id                  | 1234         |
+| Target                      | ch4fire      |
+| Target type                 | Regression   |
+| Original data shape         | (862136, 4)  |
+| Transformed data shape      | (862136, 4)  |
+| Transformed train set shape | (603495, 4)  |
+| Transformed test set shape  | (258641, 4)  |
+| Numeric features            | 3            |
+| Preprocess                  | True         |
+| Imputation type             | simple       |
+| Numeric imputation          | mean         |
+| Fold Generator              | KFold        |
+| Fold Number                 | 10           |
+| CPU Jobs                    | -1           |
