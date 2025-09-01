@@ -58,3 +58,12 @@
 | Fold Generator              | KFold        |
 | Fold Number                 | 10           |
 | CPU Jobs                    | -1           |
+
+# SHAPLEY ADDITIVE EXPLANATION (SHAP)
+In this work, we use SHAP (SHapley Additive exPlanations) plots to analyse the outputs of various machine learning algorithms. SHAP is based on game theory, 
+where a scenario is modelled with $M$ players and a contribution function $v(S)$ represents the total expected payoff obtained by a subset of players $S$.
+
+The Shapley value ensures a fair distribution of total gains among players. For a given player $j$, the Shapley value is defined as:
+
+ϕ(v)j​=ϕj​=S⊆M∖{j}∑​∣M∣!∣S∣!(∣M∣−∣S∣−1)!​(v(S∪{j})−v(S))    (1)
+
