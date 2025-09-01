@@ -65,5 +65,42 @@ where a scenario is modelled with $M$ players and a contribution function $v(S)$
 
 The Shapley value ensures a fair distribution of total gains among players. For a given player $j$, the Shapley value is defined as:
 
-ϕ(v)j​=ϕj​=S⊆M∖{j}∑​∣M∣!∣S∣!(∣M∣−∣S∣−1)!​(v(S∪{j})−v(S))    (1)
+ϕ(v)j​=ϕj​=S⊆M∖{j}∑​∣M∣!∣S∣!(∣M∣−∣S∣−1)!​(v(S∪{j})−v(S)) ................  (1)
 
+The difference term $\big(v(S \cup {j}) - v(S)\big)$ measures the additional contribution of player $j$ to the subset $S$. Thus, the Shapley value $\phi_j$ 
+is the weighted mean of all possible additional contributions across subsets not containing $j$
+
+Conditional Expectation Function
+
+Shapley values can also be expressed using the conditional expectation of the model output:
+
+fx​(S)=Ef​[f(X)∣do(XS​=xS​)] ................ (2)
+
+Where:
+
+> $S$: the set of features
+
+> $X$: the random variable representing all $M$ input features
+
+> $x$: the input vector for the current prediction
+
+Key Properties of SHAP
+
+Shapley values uniquely satisfy three properties:
+
+Local Accuracy (Efficiency)
+The sum of feature attributions equals the model’s prediction:
+
+f(x)=ϕ0​(f)+i=1∑M​ϕi​(f,x) .................. (3)
+
+Here, $\phi_0(f)$ is the expected model output $E[f(Z)]$, and the sum of $\phi_i(f, x)$ matches $f(x)$.
+
+Consistency (Monotonicity)
+If a model changes so that a feature’s contribution increases (or remains constant), its attribution should not decrease. For two models $f$ and $f'$:
+
+fx′​(S)−fx′​(S∖i)≥fx​(S)−fx​(S∖i)⇒ϕi​(f′,x)≥ϕi​(f,x) .....................(4)
+
+Missingness (Null Effects)
+A feature that does not affect the model output receives a Shapley value of zero:
+
+fx​(S∪i)=fx​(S)⇒ϕi​(f,x)=0 .....................(5)
