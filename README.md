@@ -22,7 +22,8 @@
 # SHAP - Dependency plot
 ![Example Image](images/SHAPdependenceplot.jpg).
 
-
+# PCA plot
+![Example Image](images/pca_loadings_bar_chart.jpg).
 
 # Table 1: An overview of the preprocessing information and PyCaret setup configuration for the regression experiment.
 
