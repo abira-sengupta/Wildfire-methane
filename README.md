@@ -108,3 +108,28 @@ fx​(S∪i)=fx​(S)⇒ϕi​(f,x)=0 .....................(5)
 # Correlation - map
 
 ![Example Image](images/correlation.png).
+
+# Table 3: PyCaret modelling
+
+| Model   | Description                        | MAE    | MSE    | RMSE   | R²      | RMSLE  | MAPE   | TT (Sec) |
+|---------|------------------------------------|--------|--------|--------|---------|--------|--------|----------|
+| catboost| CatBoost Regressor                 | 0.0327 | 0.0047 | 0.0682 | 0.1029  | 0.0575 | 8.5502 | 14.1200  |
+| lightgbm| Light Gradient Boosting Machine    | 0.0323 | 0.0047 | 0.0683 | 0.1023  | 0.0575 | 8.4318 | 136.1240 |
+| gbr     | Gradient Boosting Regressor        | 0.0329 | 0.0047 | 0.0687 | 0.0895  | 0.0579 | 9.1552 | 5.5720   |
+| rf      | Random Forest Regressor            | 0.0342 | 0.0048 | 0.0691 | 0.0788  | 0.0587 | 9.2734 | 16.5240  |
+| et      | Extra Trees Regressor              | 0.0345 | 0.0048 | 0.0695 | 0.0694  | 0.0590 | 9.4238 | 4.9490   |
+| xgboost | Extreme Gradient Boosting          | 0.0336 | 0.0048 | 0.0696 | 0.0670  | 0.0589 | 8.8548 | 0.3240   |
+| ridge   | Ridge Regression                   | 0.0349 | 0.0050 | 0.0706 | 0.0411  | 0.0596 | 11.0725| 0.0770   |
+| br      | Bayesian Ridge                     | 0.0349 | 0.0050 | 0.0706 | 0.0411  | 0.0596 | 11.0727| 0.0460   |
+| lr      | Linear Regression                  | 0.0349 | 0.0050 | 0.0706 | 0.0411  | 0.0596 | 11.0725| 0.6800   |
+| lar     | Least Angle Regression             | 0.0353 | 0.0050 | 0.0708 | 0.0344  | 0.0598 | 11.3288| 0.0770   |
+| omp     | Orthogonal Matching Pursuit        | 0.0353 | 0.0051 | 0.0712 | 0.0240  | 0.0602 | 11.7457| 0.0700   |
+| lasso   | Lasso Regression                   | 0.0364 | 0.0052 | 0.0721 | -0.0001 | 0.0610 | 13.0236| 0.0530   |
+| en      | Elastic Net                        | 0.0364 | 0.0052 | 0.0721 | -0.0001 | 0.0610 | 13.0236| 0.1290   |
+| llar    | Lasso Least Angle Regression       | 0.0364 | 0.0052 | 0.0721 | -0.0001 | 0.0610 | 13.0236| 0.0900   |
+| dummy   | Dummy Regressor                    | 0.0364 | 0.0052 | 0.0721 | -0.0001 | 0.0610 | 13.0236| 0.1320   |
+| knn     | K Neighbors Regressor              | 0.0349 | 0.0055 | 0.0739 | -0.0530 | 0.0633 | 8.4704 | 0.2630   |
+| huber   | Huber Regressor                    | 0.0260 | 0.0056 | 0.0745 | -0.0707 | 0.0632 | 2.5873 | 0.2010   |
+| ada     | AdaBoost Regressor                 | 0.0596 | 0.0071 | 0.0840 | -0.3607 | 0.0744 | 24.2473| 0.7080   |
+| dt      | Decision Tree Regressor            | 0.0419 | 0.0099 | 0.0995 | -0.9110 | 0.0834 | 9.4509 | 0.3550   |
+| par     | Passive Aggressive Regressor       | 0.0706 | 0.0103 | 0.0982 | -1.0337 | 0.0841 | 30.6262| 0.1000   |
