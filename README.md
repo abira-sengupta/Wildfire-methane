@@ -133,3 +133,8 @@ fx​(S∪i)=fx​(S)⇒ϕi​(f,x)=0 .....................(5)
 | ada     | AdaBoost Regressor                 | 0.0596 | 0.0071 | 0.0840 | -0.3607 | 0.0744 | 24.2473| 0.7080   |
 | dt      | Decision Tree Regressor            | 0.0419 | 0.0099 | 0.0995 | -0.9110 | 0.0834 | 9.4509 | 0.3550   |
 | par     | Passive Aggressive Regressor       | 0.0706 | 0.0103 | 0.0982 | -1.0337 | 0.0841 | 30.6262| 0.1000   |
+
+
+# Australia - map
+
+![Example Image](images/Australia-map.jpg).
