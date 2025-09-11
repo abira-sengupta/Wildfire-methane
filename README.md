@@ -104,3 +104,7 @@ Missingness (Null Effects)
 A feature that does not affect the model output receives a Shapley value of zero:
 
 fx​(S∪i)=fx​(S)⇒ϕi​(f,x)=0 .....................(5)
+
+# Correlation - map
+
+![Example Image](images/correlation.png).
